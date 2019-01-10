@@ -13,6 +13,7 @@ Additional Features:
 ##### Fetching a schema:
 ```
 const { SchemaRegistry } = require('rdkafka-avro');
+
 // Get schema with with ID 1
 schemaRegistry = new SchemaRegistry('KAFKA-SCHEMA-REGISTRY-URL', {
     username: 'basic-auth-user',
@@ -23,7 +24,7 @@ const schemaId = 1;
 schemaRegistry.getSchema(schemaId)
     .then((schema) => {
         console.log(schema)
-}); 
+    }); 
 ```
 
 ##### Producing (using a kafka write stream + json defined schema): 
