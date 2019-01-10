@@ -13,7 +13,6 @@ const toMessageBuffer = function (value, schema, schemaId, initialBufferLength) 
 
     if (bufferPosition < 0) {
         // Recursively adjust buffer size.
-        console.info('Message too big - resizing buffer');
         return toMessageBuffer(value, schema, schemaId, length - bufferPosition);
     }
 
