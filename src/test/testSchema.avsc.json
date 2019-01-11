@@ -1,0 +1,16 @@
+{
+    "type": "record",
+    "name": "customer",
+    "namespace": "org.customer",
+    "doc": "A single customer",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      }
+    ]
+}
