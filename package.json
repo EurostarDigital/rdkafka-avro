@@ -1,6 +1,6 @@
 {
   "name": "rdkafka-avro",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Integrate node-rdkafka with schema registry + apache avro",
   "main": "index.js",
   "scripts": {
@@ -22,12 +22,11 @@
   },
   "homepage": "https://github.com/EurostarDigital/rdkafka-avro#readme",
   "dependencies": {
-    "avsc": "^5.4.7",
-    "axios": "^0.18.0",
-    "node-cache": "^4.2.0"
+    "avsc": "^5.4.13",
+    "node-cache": "^4.2.1"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
+    "jest": "^24.9.0",
     "nock": "^10.0.6"
   }
 }
