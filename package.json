@@ -1,6 +1,6 @@
 {
   "name": "rdkafka-avro",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Integrate node-rdkafka with schema registry + apache avro",
   "main": "index.js",
   "scripts": {
