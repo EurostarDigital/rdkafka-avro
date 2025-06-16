@@ -1,11 +1,17 @@
 # rdkafka-avro
+
+## This repo has now been archived
+
+All the associated services have been migrated from Kafka to AWS SNS/SQS
+
+
 This library includes functionality to integrate node-rdkafka with the Kafka Schema Registry using Apache avro.
 
 Additional Features:
  - Basic auth with Schema Registry
  - In memory caching (default TTL 5 minutes)
  - Magic byte encoding (the schema registry will not recognise the avro format without this)
- 
+
 
 
 ## Examples
@@ -24,10 +30,10 @@ const schemaId = 1;
 schemaRegistry.getSchema(schemaId)
     .then((schema) => {
         console.log(schema)
-    }); 
+    });
 ```
 
-##### Producing (using a kafka write stream + json defined schema): 
+##### Producing (using a kafka write stream + json defined schema):
 ```
 const Kafka = require("node-rdkafka");
 const { encode } = require('rdkafka-avro');
